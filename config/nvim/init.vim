@@ -46,7 +46,8 @@ endfunction
 call plug#begin('~/.vim/plugged')
 
 " Programming
-Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot',
+            \{'dir': '~/.vim/plugged/vim-polyglot', 'do': './build'}
 Plug 'neomake/neomake'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
